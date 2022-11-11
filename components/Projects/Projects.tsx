@@ -2,17 +2,14 @@ import styles from '../../styles/Projects.module.css'
 import { useContext } from 'react'
 import Image from 'next/image'
 import { ThemeContext } from 'styled-components'
-import { Open_Sans } from '@next/font/google'
 import { Project } from './Project'
 
-
-const openSans = Open_Sans({weight: '600'})
 
 export function Projects() {
   const themeContext = useContext(ThemeContext)
   return (
     <div className={styles.container}>
-      <h2 className={`${openSans.className} accent`}>PROJECTS</h2>
+      <h2 className={'thick accent'}>PROJECTS</h2>
       <div className={styles.projectSection}>
         <Project 
           title={'PLANTIFUL'}

@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components'
 import useDarkMode from 'use-dark-mode'
 
 import { ResumeButton } from '../components'
-import { lightTheme, darkTheme, GlobalStyles, openSans } from '../utils'
+import { lightTheme, darkTheme, GlobalStyles } from '../utils'
 import '../styles/globals.css'
 
 
@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [])
 
   return (
-    <main className={openSans.className}>
+    <main>
         <ThemeProvider theme={theme}>
           <GlobalStyles />
           {isMounted && (

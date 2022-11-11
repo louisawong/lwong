@@ -4,8 +4,6 @@ import { ThemeContext } from 'styled-components'
 import { BsArrowRight} from 'react-icons/bs'
 
 import styles from '../styles/Hero.module.css'
-import { monoton } from '../utils'
-
 
 export function Hero() {
   const themeContext = useContext(ThemeContext)
@@ -26,7 +24,7 @@ export function Hero() {
             </a>
             <BsArrowRight className={styles.arrow}/>
         </div>
-        <h1 className={monoton.className}>Louisa Wong</h1>
+        <h1 className={'monoton'}>Louisa Wong</h1>
         <p className={styles.title}>FULLSTACK SOFTWARE ENGINEER<span>{'//'}</span><span>DESIGN LOVER</span></p>
       </div>
   )

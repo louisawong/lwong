@@ -3,14 +3,13 @@ import { ThemeContext } from 'styled-components'
 import { MdOutlineEmail} from 'react-icons/md'
 import { FiLinkedin, FiGithub } from 'react-icons/fi'
 
-import { monoton } from '../utils'
 import styles from '../styles/GetInTouch.module.css'
 
 export function GetInTouch() {
   const themeContext = useContext(ThemeContext)
   return (
       <div className={styles.container}>
-        <h1 className={monoton.className}>Get In Touch</h1>
+        <h1 className={'monoton'}>Get In Touch</h1>
         <div className={styles.socials}>
             <a href = "mailto: louisawywong@gmail.com?subject=Let's%20Get%20In%20Touch!">
                 <MdOutlineEmail className={styles.icon}/>

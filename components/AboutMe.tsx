@@ -1,12 +1,11 @@
 import styles from '../styles/Experience.module.css'
-import { openSans600 } from '../utils'
 
 export function AboutMe() {
 
   return (
     <div className={styles.container}>
-        <h2 className={`${openSans600.className} accent`}>ABOUT ME</h2>
-        <h2 className={`${openSans600.className}`}>{"Hello! I'm Louisa."}</h2>
+        <h2 className={'thick accent'}>ABOUT ME</h2>
+        <h2 className={'thick'}>{"Hello! I'm Louisa."}</h2>
         <p>{"I am a full stack developer based near Toronto, ON"}</p>
         <br/>
         <p>{"My passion for programming started in 2012 when I first discovered Java and created a simple autonomous driving robot that learns how to navigate and shoots on its own for a school competition. Now, I'm a full stack engineer that loves to turn ideas into beautiful online spaces for desktop and mobile."}</p>

@@ -2,7 +2,6 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { MdKeyboardArrowDown} from 'react-icons/md'
 
-import { openSans600 } from '../utils'
 import styles from '../styles/Experience.module.css'
 
 
@@ -19,8 +18,8 @@ export function Experience() {
 
   return (
     <div className={styles.container}>
-        <h2 className={`${openSans600.className} accent`}>EXPERIENCE</h2>
-        <h2 className={`${openSans600.className}`}>{"GUIKER - FULL STACK SOFTWARE DEVELOPER"}</h2>
+        <h2 className={'thick accent'}>EXPERIENCE</h2>
+        <h2 className={'thick'}>{"GUIKER - FULL STACK SOFTWARE DEVELOPER"}</h2>
         <p className={styles.italic}>August 2021 - November 2022</p>
         <br/>
         <p>Real estate web application that helps landlords connect to great tenants and makes the renting process from finding a place to recurrent payments easy and seamless. </p>
