@@ -1,11 +1,11 @@
-import styles from '../styles/Hero.module.css'
 import { useContext } from 'react'
 import Image from 'next/image'
-import { Monoton} from '@next/font/google'
 import { ThemeContext } from 'styled-components'
 import { BsArrowRight} from 'react-icons/bs'
 
-const monoton = Monoton({weight: '400'})
+import styles from '../styles/Hero.module.css'
+import { monoton } from '../utils'
+
 
 export function Hero() {
   const themeContext = useContext(ThemeContext)

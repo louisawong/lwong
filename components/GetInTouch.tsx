@@ -1,12 +1,10 @@
-import styles from '../styles/GetInTouch.module.css'
 import { useContext } from 'react'
-import { Monoton} from '@next/font/google'
 import { ThemeContext } from 'styled-components'
 import { MdOutlineEmail} from 'react-icons/md'
 import { FiLinkedin, FiGithub } from 'react-icons/fi'
-import { ResumeButton } from './ResumeButton'
 
-const monoton = Monoton({weight: '400'})
+import { monoton } from '../utils'
+import styles from '../styles/GetInTouch.module.css'
 
 export function GetInTouch() {
   const themeContext = useContext(ThemeContext)

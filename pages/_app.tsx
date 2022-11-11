@@ -1,15 +1,13 @@
-import { Open_Sans } from '@next/font/google'
+
 import { useEffect, useState } from 'react'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 import useDarkMode from 'use-dark-mode'
 
 import { ResumeButton } from '../components'
-import { lightTheme, darkTheme, GlobalStyles } from '../utils'
+import { lightTheme, darkTheme, GlobalStyles, openSans } from '../utils'
 import '../styles/globals.css'
 
-
-const openSans = Open_Sans({weight: '300'})
 
 export default function App({ Component, pageProps }: AppProps) {
   const darkmode = useDarkMode(false)

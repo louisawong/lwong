@@ -1,11 +1,10 @@
-import styles from '../styles/Experience.module.css'
-import { Open_Sans } from '@next/font/google'
 import Image from 'next/image'
 import { useState } from 'react'
 import { MdKeyboardArrowDown} from 'react-icons/md'
 
+import { openSans600 } from '../utils'
+import styles from '../styles/Experience.module.css'
 
-const openSans = Open_Sans({weight: '600'})
 
 const projects = ['One-click Tenant Application', 'US Recurrent & One-time Payment (Stripe)', 'Signing Relevant Documents (DocuSign)', 'SMS Notification (Twilio)', 'Website Redesign', 'Booking Timer Countdown', 'Bulk Listing Update']
 const techs = ['AWS', 'MySQL', 'Sequelize', 'MongoDB', 'Mongoose', 'React', 'TypeScript']
@@ -20,8 +19,8 @@ export function Experience() {
 
   return (
     <div className={styles.container}>
-        <h2 className={`${openSans.className} accent`}>EXPERIENCE</h2>
-        <h2 className={`${openSans.className}`}>{"GUIKER - FULL STACK SOFTWARE DEVELOPER"}</h2>
+        <h2 className={`${openSans600.className} accent`}>EXPERIENCE</h2>
+        <h2 className={`${openSans600.className}`}>{"GUIKER - FULL STACK SOFTWARE DEVELOPER"}</h2>
         <p className={styles.italic}>August 2021 - November 2022</p>
         <br/>
         <p>Real estate web application that helps landlords connect to great tenants and makes the renting process from finding a place to recurrent payments easy and seamless. </p>
