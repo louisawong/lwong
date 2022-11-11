@@ -1,0 +1,7 @@
+export { AboutMe } from './AboutMe'
+export { Experience } from './Experience'
+export { GetInTouch } from './GetInTouch'
+export { Hero } from './Hero'
+export { Projects } from './Projects'
+export { ResumeButton } from './ResumeButton'
+export { Social } from './Social'

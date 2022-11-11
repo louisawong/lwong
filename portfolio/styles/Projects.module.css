@@ -1,0 +1,97 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.plantifulLogin {
+    border-radius: 10px;
+    width: 300px;
+    z-index: 1;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12),  0 4px 4px rgba(0,0,0,0.12),  0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12);
+}
+
+.projectSection {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.fitomeLogin {
+    border-radius: 10px;
+    width: 200px;
+    z-index: 1;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12),  0 4px 4px rgba(0,0,0,0.12),  0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12);
+}
+
+.fitomeWorkout {
+    border-radius: 10px;
+    width: 200px;
+    margin-left: 20px;
+    margin-bottom: -80px;
+    margin-top: 80px;
+    z-index: 3;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12),  0 4px 4px rgba(0,0,0,0.12),  0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12);
+}
+
+.plantifulPost {
+    border-radius: 10px;
+    width: 200px;
+    margin-left: -60px;
+    margin-bottom: -60px;
+    margin-top: 60px;
+    z-index: 3;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12),  0 4px 4px rgba(0,0,0,0.12),  0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12);
+}
+
+.project {
+    padding-top: 16px;
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.projectTitle {
+    text-align: left;
+}
+
+.projectRight {
+    padding: 0 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.projectLeft {
+    display:flex;
+    flex-direction: row;
+    width: 55%;
+    justify-content: center;
+}
+
+@media (max-width:1040px) { 
+    .projectLeft {
+        width:100%;
+    }
+    .projectRight{
+        width:100%;
+        padding: 0;
+    }
+    .plantifulLogin {
+        width:60%;
+    }
+    .plantifulPost {
+        width:40%;
+        margin-left: -30px;
+        margin-bottom: -60px;
+        margin-top: 60px;
+    }
+    .project {
+        flex-direction: column-reverse;
+    }
+    .fitomeLogin, .fitomeWorkout{
+        width: 40%;
+    }
+}
