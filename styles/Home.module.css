@@ -5,7 +5,7 @@
   align-items: center;
   flex-direction: column;
   margin: 0 10vw;
-  margin-bottom: 200px;
+  margin-bottom: 250px;
 }
 
 .bodyContainer {
@@ -14,8 +14,8 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  gap: 200px;
-  margin-top: 150px
+  gap: 250px;
+  margin-top: 200px
 }
 
 .code {
@@ -28,8 +28,11 @@
 
 @media (max-width:420px) {
   .bodyContainer {
-    gap: 80px;
-    margin-top: 50px;
+    gap: 150px;
+    margin-top: 100px;
+  }
+  .container {
+    margin-bottom: 150px;
   }
 }
 
