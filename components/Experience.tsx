@@ -23,16 +23,16 @@ export function Experience() {
         <p className={styles.italic}>August 2021 - November 2022</p>
         <br/>
         <p>Real estate web application that helps landlords connect to great tenants and makes the renting process from finding a place to recurrent payments easy and seamless. </p>
-        <div className={styles.collapseTitle}>
+        <div className={styles.collapseTitle} onClick={handleProjects}>
             <h2>PROJECTS</h2>
-            <MdKeyboardArrowDown className={styles[`arrow`+(isOpenProjects ? '-open' : '')]} onClick={handleProjects}/>
+            <MdKeyboardArrowDown className={styles[`arrow`+(isOpenProjects ? '-open' : '')]} />
         </div>
         {isOpenProjects && <ul>
             {projects.map(project => <li key={project}>{project}</li>)}
         </ul>}
-        <div className={styles.collapseTitle}>
+        <div className={styles.collapseTitle} onClick={handleTech}>
             <h2>TECHNOLOGY STACK</h2>
-            <MdKeyboardArrowDown className={styles[`arrow`+(isOpenTech ? '-open' : '')]} onClick={handleTech}/>
+            <MdKeyboardArrowDown className={styles[`arrow`+(isOpenTech ? '-open' : '')]} />
         </div>
         {isOpenTech && <ul>
             {techs.map(tech => <li key={tech}>{tech}</li>)}

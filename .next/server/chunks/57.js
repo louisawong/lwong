@@ -131,7 +131,7 @@ function AboutMe() {
                 children: "Hello! I'm Louisa."
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                children: "I am a full stack developer based near Toronto, ON"
+                children: "I am a full stack developer based near Toronto, ON."
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
@@ -206,13 +206,13 @@ function Experience() {
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 className: (Experience_module_default()).collapseTitle,
+                onClick: handleProjects,
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                         children: "PROJECTS"
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx(md_.MdKeyboardArrowDown, {
-                        className: (Experience_module_default())[`arrow` + (isOpenProjects ? "-open" : "")],
-                        onClick: handleProjects
+                        className: (Experience_module_default())[`arrow` + (isOpenProjects ? "-open" : "")]
                     })
                 ]
             }),
@@ -223,13 +223,13 @@ function Experience() {
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 className: (Experience_module_default()).collapseTitle,
+                onClick: handleTech,
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                         children: "TECHNOLOGY STACK"
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx(md_.MdKeyboardArrowDown, {
-                        className: (Experience_module_default())[`arrow` + (isOpenTech ? "-open" : "")],
-                        onClick: handleTech
+                        className: (Experience_module_default())[`arrow` + (isOpenTech ? "-open" : "")]
                     })
                 ]
             }),
@@ -325,6 +325,10 @@ var Hero_module_default = /*#__PURE__*/__webpack_require__.n(Hero_module);
 function Hero() {
     const themeContext = (0,external_react_.useContext)(external_styled_components_.ThemeContext);
     const theme = themeContext.background === "#283618" ? "dark" : "light";
+    console.log({
+        name: (Hero_module_default())[`circleBackground-${theme}}`],
+        name2: `circleBackground-${theme}}`
+    });
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
         className: (Hero_module_default()).hero,
         children: [
@@ -349,7 +353,7 @@ function Hero() {
                         href: "mailto: louisawywong@gmail.com?subject=Let's%20Connect!",
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: (Hero_module_default())[`circleBackground-${theme}}`]
+                                className: (Hero_module_default())[`circleBackground-${theme}`]
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: (Hero_module_default())[`circle-${theme}`],
@@ -372,7 +376,7 @@ function Hero() {
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
                 className: (Hero_module_default()).title,
                 children: [
-                    "FULLSTACK SOFTWARE ENGINEER",
+                    "FULL STACK SOFTWARE ENGINEER",
                     /*#__PURE__*/ jsx_runtime_.jsx("span", {
                         children: "//"
                     }),
