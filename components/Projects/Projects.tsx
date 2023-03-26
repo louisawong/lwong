@@ -13,7 +13,7 @@ export function Projects() {
       <div className={styles.projectSection}>
         <Project 
           title={'PLANTIFUL'}
-          description={'A responsive web application designed for the plant loving community. Users are able to discover and connect with nearby users by their geo-spatial data to sell or trade their plant collection. Users are also able to post their plant inspirations globally to show off their terrarium or green space.'} 
+          description={'A responsive web application designed for the plant-loving community. Users are able to discover and connect with nearby users by their geo-spatial data to sell or trade their plant collection. Users can post their plant inspirations globally to show off their terrarium or green space.'} 
           techStack={['React','Next.Js', 'Next.Js API', 'Redux', 'MongoDB', 'Mongoose', 'Firebase Authentication', 'SASS']}
           images={
             <>

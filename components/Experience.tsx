@@ -20,9 +20,9 @@ export function Experience() {
     <div className={styles.container}>
         <h2 className={'thick accent'}>EXPERIENCE</h2>
         <h2 className={'thick'}>{"GUIKER - FULL STACK SOFTWARE DEVELOPER"}</h2>
-        <p className={styles.italic}>August 2021 - November 2022</p>
+        <p className={styles.italic}>August 2021 - Present</p>
         <br/>
-        <p>Real estate web application that helps landlords connect to great tenants and makes the renting process from finding a place to recurrent payments easy and seamless. </p>
+        <p>Real estate web application that helps landlords connect to great tenants. Making the renting process from finding a place to recurrent payments easy and seamless. </p>
         <div className={styles.collapseTitle} onClick={handleProjects}>
             <h2>PROJECTS</h2>
             <MdKeyboardArrowDown className={styles[`arrow`+(isOpenProjects ? '-open' : '')]} />
