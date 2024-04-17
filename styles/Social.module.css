@@ -8,6 +8,8 @@
 }
 
 .button-light {
+    display: flex;
+    gap: 8px;
     padding: 10px;
     border-radius: 50px;
     width: fit-content;
@@ -16,6 +18,8 @@
 }
 
 .button-dark {
+    display: flex;
+    gap: 8px;
     border-radius: 50px;
     padding: 10px;
     width: fit-content;

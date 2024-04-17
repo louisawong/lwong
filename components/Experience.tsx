@@ -6,7 +6,7 @@ import styles from '../styles/Experience.module.css'
 
 
 const projects = ['One-click Tenant Application', 'US Recurrent & One-time Payment (Stripe)', 'Signing Relevant Documents (DocuSign)', 'SMS Notification (Twilio)', 'Website Redesign', 'Booking Timer Countdown', 'Bulk Listing Update', 'Fractional Ownership Feature', 'Roommate Matching', 'Payout OnBoarding Flow']
-const techs = ['AWS (Lambda, EventBridge, S3, SQS, Rekognition)', 'MySQL', 'Sequelize', 'MongoDB', 'Mongoose', 'React', 'TypeScript']
+const techs = ['AWS (Lambda, EventBridge, S3, SQS, Rekognition)', 'MySQL', 'Sequelize', 'MongoDB', 'Mongoose', 'React', 'TypeScript', 'Node.js']
 const integrations = ['Stripe', 'PaySafe', 'Twilio', 'TransferWise', 'DocuSign', 'Certn', 'Slack']
 
 
@@ -30,7 +30,7 @@ export function Experience() {
         <p>Guiker is a platform for all things real estate. From helping landlords and corporations find their perfect tenants, to managing their leases, and rent payments. Guiker is also an investment platform for those who want to get a piece of the pie in real estate through property fractional ownership. It allows people to own a piece of property by owning only a slice of it as an investment rather than buying a property fully. This opens the real estate market to the masses and it will no longer be an investment barrier.</p>
         <br/>
         <div className={styles.collapseTitle} onClick={handleProjects}>
-            <h2>PROJECTS</h2>
+            <h2>SELECT PROJECTS</h2>
             <MdKeyboardArrowDown className={styles[`arrow`+(isOpenProjects ? '-open' : '')]} />
         </div>
         {isOpenProjects && <ul>

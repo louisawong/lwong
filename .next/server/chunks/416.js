@@ -186,7 +186,8 @@ const techs = [
     "MongoDB",
     "Mongoose",
     "React",
-    "TypeScript"
+    "TypeScript",
+    "Node.js"
 ];
 const integrations = [
     "Stripe",
@@ -233,7 +234,7 @@ function Experience() {
                 onClick: handleProjects,
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                        children: "PROJECTS"
+                        children: "SELECT PROJECTS"
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx(md_.MdKeyboardArrowDown, {
                         className: (Experience_module_default())[`arrow` + (isOpenProjects ? "-open" : "")]
@@ -429,7 +430,7 @@ function Hero() {
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
                 className: (Hero_module_default()).title,
-                children: "INTERMEDIATE FULL STACK SOFTWARE ENGINEER"
+                children: "FULL STACK SOFTWARE ENGINEER"
             })
         ]
     });
@@ -572,18 +573,22 @@ var Social_module_default = /*#__PURE__*/__webpack_require__.n(Social_module);
 
 
 
+
 function ResumeButton() {
     const themeContext = (0,external_react_.useContext)(external_styled_components_.ThemeContext);
     return /*#__PURE__*/ jsx_runtime_.jsx("a", {
-        href: "./files/Louisa-Wong-2024.pdf",
+        href: "./files/LouisaWong2024.pdf",
         download: true,
         className: "hamburger_choices_option",
-        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
             className: (Social_module_default())[`button-${themeContext.background === "#283618" ? "dark" : "light"}`],
-            children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                className: (Social_module_default()).buttonCTA,
-                children: "Resume"
-            })
+            children: [
+                /*#__PURE__*/ jsx_runtime_.jsx(fi_.FiDownload, {}),
+                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                    className: (Social_module_default()).buttonCTA,
+                    children: "Resume"
+                })
+            ]
         })
     });
 }

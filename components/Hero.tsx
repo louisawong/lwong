@@ -25,7 +25,7 @@ export function Hero() {
             <BsArrowRight className={styles.arrow}/>
         </div>
         <h1 className={'monoton'}>Louisa Wong</h1>
-        <p className={styles.title}>INTERMEDIATE FULL STACK SOFTWARE ENGINEER</p>
+        <p className={styles.title}>FULL STACK SOFTWARE ENGINEER</p>
       </div>
   )
 }
