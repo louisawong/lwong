@@ -9,7 +9,7 @@ export function Projects() {
   const themeContext = useContext(ThemeContext)
   return (
     <div className={styles.container}>
-      <h2 className={'thick accent'}>PROJECTS</h2>
+      <h2 className={'thick accent'}>OTHER EXPERIENCES</h2>
       <div className={styles.projectSection}>
         <Project 
           title={'PLANTIFUL'}

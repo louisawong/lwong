@@ -9,7 +9,6 @@ export function Hero() {
   const themeContext = useContext(ThemeContext)
   const theme = themeContext.background === '#283618' ? 'dark' : 'light'
 
-  console.log({name: styles[`circleBackground-${theme}}`], name2:`circleBackground-${theme}}`})
   return (
       <div className={styles.hero}>
         <div className={styles.imageContainer}>
@@ -20,13 +19,13 @@ export function Hero() {
             <a className={styles.circle} href = "mailto: louisawywong@gmail.com?subject=Let's%20Connect!">
               <div className={styles[`circleBackground-${theme}`]}/>
               <div className={styles[`circle-${theme}`]}>
-                  <p className={styles.circleCTA}>{"LET'S TALK"}</p>
+                  <p className={styles.circleCTA}>LET'S TALK</p>
               </div>
             </a>
             <BsArrowRight className={styles.arrow}/>
         </div>
         <h1 className={'monoton'}>Louisa Wong</h1>
-        <p className={styles.title}>FULL STACK SOFTWARE ENGINEER<span>{'//'}</span><span>DESIGN LOVER</span></p>
+        <p className={styles.title}>INTERMEDIATE FULL STACK SOFTWARE ENGINEER</p>
       </div>
   )
 }

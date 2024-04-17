@@ -1,5 +1,5 @@
-exports.id = 57;
-exports.ids = [57];
+exports.id = 416;
+exports.ids = [416];
 exports.modules = {
 
 /***/ 751:
@@ -94,7 +94,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 57:
+/***/ 416:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -131,15 +131,15 @@ function AboutMe() {
                 children: "Hello! I'm Louisa."
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                children: "I am a full stack developer based near Toronto, ON."
+                children: "I am a full stack developer based in Cambridge, Ontario."
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                children: "My passion for programming started in 2012 when I first discovered Java and created a simple autonomous driving robot that learns how to navigate and shoots on its own for a school competition. Now, I'm a full stack engineer that loves to turn ideas into beautiful online spaces for desktop and mobile."
+                children: "My passion for programming started in 2012 when I first discovered Java and created a simple autonomous driving robot that learns how to navigate and shoots on its own for a school competition. Ever since then, I loved learning new technology and turning cool ideas into reality."
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                children: "As I studied and previously worked in Marketing for 3 years, I love great user experience and brand design. My experience helps me plan and develop applications with a user-driven mindset. I enjoy writing code that solves real-life problem by merging functionality and creativity together. I have always loved a good challenge and problem solving as it’s all about looking at a situation from different perspectives and breaking it down into bite size pieces."
+                children: "As I studied and previously worked in Marketing for 3 years, I love great user experience and design. My experience helps me plan and develop applications with a user-driven mindset. I focus on writing code that solves real-life problems by merging functionality and creativity together. I have always loved a good challenge and problem solving as it’s all about looking at a situation from different perspectives and breaking it down into bite size pieces."
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
@@ -169,10 +169,13 @@ const projects = [
     "SMS Notification (Twilio)",
     "Website Redesign",
     "Booking Timer Countdown",
-    "Bulk Listing Update"
+    "Bulk Listing Update",
+    "Fractional Ownership Feature",
+    "Roommate Matching",
+    "Payout OnBoarding Flow"
 ];
 const techs = [
-    "AWS",
+    "AWS (Lambda, EventBridge, S3, SQS, Rekognition)",
     "MySQL",
     "Sequelize",
     "MongoDB",
@@ -180,11 +183,22 @@ const techs = [
     "React",
     "TypeScript"
 ];
+const integrations = [
+    "Stripe",
+    "PaySafe",
+    "Twilio",
+    "TransferWise",
+    "DocuSign",
+    "Certn",
+    "Slack"
+];
 function Experience() {
     const [isOpenProjects, setIsOpenProjects] = (0,external_react_.useState)(false);
     const [isOpenTech, setIsOpenTech] = (0,external_react_.useState)(false);
+    const [isOpenIntegrations, setIsOpenIntegrations] = (0,external_react_.useState)(false);
     const handleProjects = ()=>setIsOpenProjects(!isOpenProjects);
     const handleTech = ()=>setIsOpenTech(!isOpenTech);
+    const handleIntegrations = ()=>setIsOpenIntegrations(!isOpenIntegrations);
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
         className: (Experience_module_default()).container,
         children: [
@@ -194,15 +208,18 @@ function Experience() {
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                 className: "thick",
-                children: "GUIKER - FULL STACK SOFTWARE DEVELOPER"
+                children: "GUIKER - INTERMEDIATE FULL STACK SOFTWARE DEVELOPER"
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
                 className: (Experience_module_default()).italic,
-                children: "August 2021 - November 2022"
+                children: "August 2021 - Present"
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                children: "Real estate web application that helps landlords connect to great tenants and makes the renting process from finding a place to recurrent payments easy and seamless. "
+                children: "Real estate web application that will revolutionize real estate investments for our generation."
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                children: "Guiker is a platform for all things real estate. From helping landlords and corporations find their perfect tenants, to managing their lease, and rent payments. Guiker is also an investment platform for those who want to get a piece of the pie in real estate through property fractional ownership. It allows people to own a piece of property by owning only a slice of it as an investment rather than buying a property fully. This opens the real estate market to the masses and it will no longer be an investment barrier."
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 className: (Experience_module_default()).collapseTitle,
@@ -238,6 +255,23 @@ function Experience() {
                         children: tech
                     }, tech))
             }),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: (Experience_module_default()).collapseTitle,
+                onClick: handleIntegrations,
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                        children: "INTEGRATIONS"
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx(md_.MdKeyboardArrowDown, {
+                        className: (Experience_module_default())[`arrow` + (isOpenIntegrations ? "-open" : "")]
+                    })
+                ]
+            }),
+            isOpenIntegrations && /*#__PURE__*/ jsx_runtime_.jsx("ul", {
+                children: integrations.map((tech)=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
+                        children: tech
+                    }, tech))
+            }),
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 className: (Experience_module_default()).imageContainer,
                 children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
@@ -257,7 +291,19 @@ var fi_ = __webpack_require__(750);
 // EXTERNAL MODULE: ./styles/GetInTouch.module.css
 var GetInTouch_module = __webpack_require__(549);
 var GetInTouch_module_default = /*#__PURE__*/__webpack_require__.n(GetInTouch_module);
+;// CONCATENATED MODULE: ./components/SocialLink.tsx
+
+const SocialLink = ({ icon , link  })=>{
+    return /*#__PURE__*/ jsx_runtime_.jsx("a", {
+        href: link,
+        target: "_blank",
+        rel: "noreferrer",
+        children: icon
+    });
+};
+
 ;// CONCATENATED MODULE: ./components/GetInTouch.tsx
+
 
 
 
@@ -273,34 +319,39 @@ function GetInTouch() {
                 className: "monoton",
                 children: "Get In Touch"
             }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: (GetInTouch_module_default()).socials,
+                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
+                    href: "mailto: louisawywong@gmail.com?subject=Let's%20Get%20In%20Touch!",
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx(md_.MdOutlineEmail, {
+                            className: (GetInTouch_module_default()).icon
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                            className: "accent",
+                            children: "louisawywong@gmail.com"
+                        })
+                    ]
+                })
+            }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 className: (GetInTouch_module_default()).socials,
                 children: [
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
-                        href: "mailto: louisawywong@gmail.com?subject=Let's%20Get%20In%20Touch!",
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx(md_.MdOutlineEmail, {
-                                className: (GetInTouch_module_default()).icon
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                className: "accent",
-                                children: "louisawywong@gmail.com"
-                            })
-                        ]
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                        href: "https://github.com/louisawong",
-                        target: "_blank",
-                        rel: "noreferrer",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(fi_.FiGithub, {
+                    /*#__PURE__*/ jsx_runtime_.jsx(SocialLink, {
+                        link: "https://gitlab.com/louisawong",
+                        icon: /*#__PURE__*/ jsx_runtime_.jsx(fi_.FiGitlab, {
                             className: (GetInTouch_module_default()).icon
                         })
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                        href: "https://www.linkedin.com/in/louisa-wy-wong/",
-                        target: "_blank",
-                        rel: "noreferrer",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(fi_.FiLinkedin, {
+                    /*#__PURE__*/ jsx_runtime_.jsx(SocialLink, {
+                        link: "https://github.com/louisawong",
+                        icon: /*#__PURE__*/ jsx_runtime_.jsx(fi_.FiGithub, {
+                            className: (GetInTouch_module_default()).icon
+                        })
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx(SocialLink, {
+                        link: "https://www.linkedin.com/in/louisa-wy-wong/",
+                        icon: /*#__PURE__*/ jsx_runtime_.jsx(fi_.FiLinkedin, {
                             className: (GetInTouch_module_default()).icon
                         })
                     })
@@ -325,10 +376,6 @@ var Hero_module_default = /*#__PURE__*/__webpack_require__.n(Hero_module);
 function Hero() {
     const themeContext = (0,external_react_.useContext)(external_styled_components_.ThemeContext);
     const theme = themeContext.background === "#283618" ? "dark" : "light";
-    console.log({
-        name: (Hero_module_default())[`circleBackground-${theme}}`],
-        name2: `circleBackground-${theme}}`
-    });
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
         className: (Hero_module_default()).hero,
         children: [
@@ -373,17 +420,9 @@ function Hero() {
                 className: "monoton",
                 children: "Louisa Wong"
             }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+            /*#__PURE__*/ jsx_runtime_.jsx("p", {
                 className: (Hero_module_default()).title,
-                children: [
-                    "FULL STACK SOFTWARE ENGINEER",
-                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                        children: "//"
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                        children: "DESIGN LOVER"
-                    })
-                ]
+                children: "INTERMEDIATE FULL STACK SOFTWARE ENGINEER"
             })
         ]
     });
@@ -446,14 +485,14 @@ function Projects() {
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                 className: "thick accent",
-                children: "PROJECTS"
+                children: "OTHER EXPERIENCES"
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 className: (Projects_module_default()).projectSection,
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx(Project, {
                         title: "PLANTIFUL",
-                        description: "A responsive web application designed for the plant loving community. Users are able to discover and connect with nearby users by their geo-spatial data to sell or trade their plant collection. Users are also able to post their plant inspirations globally to show off their terrarium or green space.",
+                        description: "A responsive web application designed for the plant-loving community. Users are able to discover and connect with nearby users by their geo-spatial data to sell or trade their plant collection. Users can post their plant inspirations globally to show off their terrarium or green space.",
                         techStack: [
                             "React",
                             "Next.Js",
@@ -528,7 +567,7 @@ var Social_module_default = /*#__PURE__*/__webpack_require__.n(Social_module);
 function ResumeButton() {
     const themeContext = (0,external_react_.useContext)(external_styled_components_.ThemeContext);
     return /*#__PURE__*/ jsx_runtime_.jsx("a", {
-        href: "./files/Louisa_Wong-2022.pdf",
+        href: "./files/Louisa-Wong-2024.pdf",
         download: true,
         className: "hamburger_choices_option",
         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -546,6 +585,7 @@ function ResumeButton() {
 
 
 
+
 function Social() {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
         className: (Social_module_default()).container,
@@ -556,19 +596,21 @@ function Social() {
                     className: (Social_module_default()).icon
                 })
             }),
-            /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                href: "https://github.com/louisawong",
-                target: "_blank",
-                rel: "noreferrer",
-                children: /*#__PURE__*/ jsx_runtime_.jsx(fi_.FiGithub, {
+            /*#__PURE__*/ jsx_runtime_.jsx(SocialLink, {
+                link: "https://gitlab.com/louisawong",
+                icon: /*#__PURE__*/ jsx_runtime_.jsx(fi_.FiGitlab, {
                     className: (Social_module_default()).icon
                 })
             }),
-            /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                href: "https://www.linkedin.com/in/louisa-wy-wong/",
-                target: "_blank",
-                rel: "noreferrer",
-                children: /*#__PURE__*/ jsx_runtime_.jsx(fi_.FiLinkedin, {
+            /*#__PURE__*/ jsx_runtime_.jsx(SocialLink, {
+                link: "https://github.com/louisawong",
+                icon: /*#__PURE__*/ jsx_runtime_.jsx(fi_.FiGithub, {
+                    className: (Social_module_default()).icon
+                })
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(SocialLink, {
+                link: "https://www.linkedin.com/in/louisa-wy-wong/",
+                icon: /*#__PURE__*/ jsx_runtime_.jsx(fi_.FiLinkedin, {
                     className: (Social_module_default()).icon
                 })
             }),
