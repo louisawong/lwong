@@ -11,6 +11,7 @@ export function Project({title, techStack, images, description }:{title: string;
         </div>
         <div className={styles.projectRight}>
           <p>{description}</p>
+          <br/>
           <h2>TECHNOLOGY STACK</h2>
           <ul>
             {

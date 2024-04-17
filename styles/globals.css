@@ -64,6 +64,8 @@ body.light-mode {
   justify-content: flex-end;
   gap:20px;
   width: 100%;
+  margin-top: 20px;
+  margin-right: 50px;
 }
 
 p, li {

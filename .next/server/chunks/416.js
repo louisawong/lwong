@@ -130,16 +130,21 @@ function AboutMe() {
                 className: "thick",
                 children: "Hello! I'm Louisa."
             }),
+            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                children: "I am a full stack developer based in Cambridge, Ontario."
+                children: "I am a full stack developer with a user-driven mindset."
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                children: "My passion for programming started in 2012 when I first discovered Java and created a simple autonomous driving robot that learns how to navigate and shoots on its own for a school competition. Ever since then, I loved learning new technology and turning cool ideas into reality."
+                children: "My passion for programming started in 2012 when I first discovered Java and created a simple autonomous driving robot that learns how to navigate and shoots on its own for a school competition. Ever since then, I loved learning new technologies and turning cool ideas into reality."
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                children: "As I studied and previously worked in Marketing for 3 years, I love great user experience and design. My experience helps me plan and develop applications with a user-driven mindset. I focus on writing code that solves real-life problems by merging functionality and creativity together. I have always loved a good challenge and problem solving as it’s all about looking at a situation from different perspectives and breaking it down into bite size pieces."
+                children: "As I have studied and previously worked in Marketing for several years, I have a solid understanding on how to better interpret market research data and to understand user journies and engagement. My experiences have helped me plan and develop applications with a user-focused mindset. I enjoy writing code that solves real-life problems by merging functionality, design and creativity together. I have always loved a good challenge and problem solving as it’s all about looking at a situation from different perspectives and breaking it down into bite size pieces."
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                children: "I have designed and built robust applications that are intuitive to navigate and engaging to users. I believe in providing value continously and deploying often by delivering well tested, quality code."
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
@@ -218,9 +223,11 @@ function Experience() {
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
                 children: "Real estate web application that will revolutionize real estate investments for our generation."
             }),
+            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                children: "Guiker is a platform for all things real estate. From helping landlords and corporations find their perfect tenants, to managing their lease, and rent payments. Guiker is also an investment platform for those who want to get a piece of the pie in real estate through property fractional ownership. It allows people to own a piece of property by owning only a slice of it as an investment rather than buying a property fully. This opens the real estate market to the masses and it will no longer be an investment barrier."
+                children: "Guiker is a platform for all things real estate. From helping landlords and corporations find their perfect tenants, to managing their leases, and rent payments. Guiker is also an investment platform for those who want to get a piece of the pie in real estate through property fractional ownership. It allows people to own a piece of property by owning only a slice of it as an investment rather than buying a property fully. This opens the real estate market to the masses and it will no longer be an investment barrier."
             }),
+            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 className: (Experience_module_default()).collapseTitle,
                 onClick: handleProjects,
@@ -455,6 +462,7 @@ function Project({ title , techStack , images , description  }) {
                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                 children: description
                             }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
                             /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                 children: "TECHNOLOGY STACK"
                             }),
