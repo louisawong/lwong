@@ -23,6 +23,12 @@
     color:#fefdf3;
 }
 
+.button-dark:hover, .button-light:hover {
+    background-color: #ee9b00;
+    color:#fefdf3;
+    border: 1px solid #fefdf3;
+}
+
 .buttonCTA {
     line-height: 1;
 }
