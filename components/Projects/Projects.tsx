@@ -24,7 +24,7 @@ export function Projects() {
           />
         <Project
           title={'FITOME'}
-          description={'A PWA management tool for personal trainers to connect remotely with their clients, inspired by the social distancing necessitated by the pandemic. Within the app, personal trainers are able to assign multiple workout regimens and individual exercises to their clients. They can invite clients via invitation codes sent through text messages. With social distancing, it is still important to have face to face time which clients. Trainers can schedule video calls for workouts and checkups that comes with a built in timer overlay. Clients are able to view workouts and join their scheduled video calls on their desktop or mobile devices.'}
+          description={'A PWA management tool for personal trainers to connect remotely with their clients, inspired by the social distancing necessitated by the pandemic. Within the app, personal trainers are able to assign multiple workout regimens and individual exercises to their clients. They can invite clients via invitation codes sent through text messages. With social distancing, it is still important to have face to face time with clients. Trainers can schedule video calls for workouts and checkups that comes with a built in timer overlay. Clients are able to view workouts and join their scheduled video calls on their desktop or mobile devices.'}
           techStack={['Peer2Peer', 'Socket.io', 'Google WorkBox', 'Express', 'PostgreSQL', 'Sequelize', 'Redux', 'Next.Js', 'Firebase Authentication']}
           images={
             <>
